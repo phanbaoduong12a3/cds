@@ -1,0 +1,22 @@
+
+@media (min-width: 992px) {
+  .legal-page > .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .legal-page .legal-content {
+    float: none;
+    order: 1;
+  }
+
+  .legal-page .legal-sidebar {
+    float: none;
+    order: 2;
+  }
+
+  .legal-page .legal-notices {
+    float: none;
+    order: 3;
+  }
+}
