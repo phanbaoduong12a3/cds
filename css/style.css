@@ -417,6 +417,31 @@ a:hover{color: #e3393c;text-decoration: none;}
     color: #444;
     background-color: #f5f5f5;
 }
+.select-box{
+    position: relative;
+}
+
+.select-box i{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#b22222;
+    z-index:10;
+}
+
+.select-box select{
+    padding-left:40px;
+    border-radius:8px;
+    height:44px;
+    border:1px solid #d9d9d9;
+    box-shadow:none;
+}
+
+.select-box select:focus{
+    border-color:#b22222;
+    box-shadow:0 0 5px rgba(178,34,34,.2);
+}
 .mega-dropdown-menu .dropdown-header {
     color: #e3393c;
     font-size: 18px;
@@ -1397,6 +1422,14 @@ a:hover{color: #e3393c;text-decoration: none;}
 	display: block;
 	margin-bottom: 20px;
 }
+.line-do1{
+	
+	height: 5px;
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+}
+
 .text-left1{
 	text-align: left !important;
 }
@@ -1584,6 +1617,213 @@ a:hover{color: #e3393c;text-decoration: none;}
     text-transform: uppercase;
 }
 
+.panel-group1 .panel{
+    border:1px solid #ddd;
+    border-radius:6px;
+    margin-bottom:12px;
+    overflow:hidden;
+    box-shadow:0 2px 4px rgba(0,0,0,.05);
+}
+
+.panel-group1 .panel-heading{
+    padding:0;
+    background:#d30000;
+}
+
+.panel-group1 .panel-title a{
+    display:block;
+    padding:15px 20px;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    text-decoration:none;
+    position:relative;
+}
+
+.panel-group1 .panel-title a:hover{
+    background:#ff3030;
+}
+
+.panel-group1 .panel-title a:after{
+    content:"+";
+    position:absolute;
+    right:20px;
+    font-size:22px;
+}
+
+.panel-group1 .panel-title a[aria-expanded="true"]:after{
+    content:"−";
+}
+
+.panel-group1 .panel-body{
+    background:#fafafa;
+    padding:15px 20px;
+}
 
 
+/* Container chính */
+.search-doc-box {
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
 
+/* Đường line đỏ trang trí tinh tế ở trên cùng */
+.search-doc-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #e3393c;
+}
+
+/* Tiêu đề */
+.search-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2c3e50;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+}
+
+/* Cấu trúc hàng hàng (Grid thay thế cho form-horizontal cũ) */
+.modern-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.modern-form .form-group {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* Label kiểu mới */
+.modern-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Ô nhập liệu & Select chung */
+.modern-form .form-control {
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background-color: #f8fafc;
+    color: #334155;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    padding: 10px 16px;
+    width: 100%;
+}
+
+/* Hiệu ứng khi click vào ô nhập liệu */
+.modern-form .form-control:focus {
+    border-color: #e3393c;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(227, 57, 60, 0.15);
+    outline: none;
+}
+
+/* Wrapper để xử lý Icon bên trong ô nhập */
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper .input-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.input-wrapper .input-icon + .form-control {
+    padding-left: 40px; /* Nhường chỗ cho icon bên trái */
+}
+
+.input-wrapper .input-icon-right {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    pointer-events: none;
+}
+
+/* Custom riêng cho ô Chọn ngày */
+.date-range-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-range-group .input-wrapper {
+    flex: 1;
+}
+
+.date-separator {
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Nút tìm kiếm căn giữa/phải cực kỳ hiện đại */
+.form-actions {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.btn-search-submit {
+    background: #e3393c;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(227, 57, 60, 0.2);
+}
+
+.btn-search-submit:hover {
+    background: #cc2a2d;
+    box-shadow: 0 6px 16px rgba(227, 57, 60, 0.3);
+    transform: translateY(-1px);
+}
+
+.btn-search-submit i {
+    margin-right: 8px;
+}
+
+/* Responsive cho thiết bị di động */
+@media (max-width: 768px) {
+    .modern-form .form-group {
+        width: 100%;
+    }
+    .date-range-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .date-separator {
+        text-align: center;
+        margin: 2px 0;
+    }
+    .btn-search-submit {
+        width: 100%;
+    }
+}

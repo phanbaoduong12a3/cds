@@ -228,85 +228,98 @@
 					  </div>
 			  </div><!--end left-->
 			  <div class="col-md-9">
-				<div class="box-timkiemvb">
-					<h3 class="text-do1 tle-video">Tìm kiếm văn bản</h3>
-					 <form class="form-horizontal" action="/action_page.php">
-						  <div class="form-group">
-							<label class="control-label col-sm-3 text-left1" for="email">Từ khóa</label>
-							<div class="col-sm-9">
-							  <input type="email" class="form-control" id="email" placeholder="Enter email">
-							</div>
-						  </div>
-						 <div class="form-group">
-							<label class="control-label col-sm-3 text-left1" for="email">Lĩnh vực</label>
-							<div class="col-sm-9">
-							  <select class="form-control" id="sel1">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-								</select>
-							</div>
-						  </div>
-						 <div class="form-group">
-							<label class="control-label col-sm-3 text-left1" for="email">Số hiệu văn bản</label>
-							<div class="col-sm-9">
-							  <input type="email" class="form-control" id="email" placeholder="Enter email">
-							</div>
-						  </div>
-						  <div class="form-group">
-							<label class="control-label col-sm-3 text-left1" for="pwd">Loại văn bản</label>
-							<div class="col-sm-9">
-							  <select class="form-control" id="sel1">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-								</select>
-							</div>
-						  </div>
-						 <div class="form-group">
-							<label class="control-label col-sm-3 text-left1" for="pwd">Cơ quan ban hành</label>
-							<div class="col-sm-9">
-							  <select class="form-control" id="sel1">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-								</select>
-							</div>
-						  </div>
-						 <div class="form-group">
-							<label class="control-label col-sm-3 text-left1" for="pwd">Ngày ban hành</label>
-							<div class="col-sm-9">
-							  <div class="row">
-								  <div class="col-xs-6">
-									  <div class="input-group">
-										  <input type="text" class="form-control">
-										  <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+				<!-- <div class="box-timkiemvb"> -->
+					<div class="search-doc-box">
+							<h3 class="search-title">Tìm kiếm văn bản</h3>
+							
+							<form action="/action_page.php" class="modern-form">
+								<div class="form-row">
+									<!-- Từ khóa -->
+									<div class="form-group col-md-6">
+										<label for="keyword">Từ khóa</label>
+										<div class="input-wrapper">
+											<i class="fas fa-keyboard input-icon"></i>
+											<input type="text" id="keyword" class="form-control" placeholder="Nhập từ khóa cần tìm...">
 										</div>
-								  </div>
-								  <div class="col-xs-6">
-									  <div class="input-group">
-										  <input type="text" class="form-control">
-										  <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+									</div>
+									<!-- Số hiệu văn bản -->
+									<div class="form-group col-md-6">
+										<label for="doc-number">Số hiệu văn bản</label>
+										<div class="input-wrapper">
+											<i class="fas fa-hashtag input-icon"></i>
+											<input type="text" id="doc-number" class="form-control" placeholder="Ví dụ: 12/2026/QĐ-TTg">
 										</div>
-								  </div>
-							  </div>
-							</div>
-						  </div>
-						  <div class="form-group">
-							<div class="col-sm-offset-3 col-sm-9">
-							  <button type="submit" class="btn btn-danger"><i class="fas fa-search mr-5"></i>Tìm</button>
-							</div>
-						  </div>
+									</div>
+								</div>
+
+								<div class="form-row">
+									<!-- Lĩnh vực -->
+									<div class="form-group col-md-6">
+										<label for="field">Lĩnh vực</label>
+										<select id="field" class="form-control select-custom">
+											<option value="" selected disabled>-- Chọn lĩnh vực --</option>
+											<option>Y tế</option>
+											<option>Giáo dục</option>
+											<option>Kinh tế</option>
+										</select>
+									</div>
+									<!-- Loại văn bản -->
+									<div class="form-group col-md-6">
+										<label for="doc-type">Loại văn bản</label>
+										<select id="doc-type" class="form-control select-custom">
+											<option value="" selected disabled>-- Chọn loại văn bản --</option>
+											<option>Quyết định</option>
+											<option>Thông tư</option>
+											<option>Nghị định</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-row">
+									<!-- Cơ quan ban hành -->
+									<div class="form-group col-md-6">
+										<label for="agency">Cơ quan ban hành</label>
+										<select id="agency" class="form-control select-custom">
+											<option value="" selected disabled>-- Chọn cơ quan --</option>
+											<option>Chính phủ</option>
+											<option>Bộ Tài chính</option>
+											<option>Bộ Công thương</option>
+										</select>
+									</div>
+									<!-- Ngày ban hành (Khoảng thời gian) -->
+									<div class="form-group col-md-6">
+										<label>Ngày ban hành</label>
+										<div class="date-range-group">
+											<div class="input-wrapper">
+												<input type="text" class="form-control datepicker" placeholder="Từ ngày">
+												<i class="far fa-calendar-alt input-icon-right"></i>
+											</div>
+											<span class="date-separator">đến</span>
+											<div class="input-wrapper">
+												<input type="text" class="form-control datepicker" placeholder="Đến ngày">
+												<i class="far fa-calendar-alt input-icon-right"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Nút tìm kiếm -->
+								<div class="form-actions">
+									<button type="submit" class="btn-search-submit">
+										<i class="fas fa-search"></i> Tìm kiếm ngay
+									</button>
+								</div>
+							</form> 
+						</div>
 					</form> 
-				</div><span class="line-do"></span><!--end tìm kiếm vb-->
+				<!-- </div> -->
+				<span class="line-do1"></span>
+				
 				<div role="tabpanel">
 				  <ul class="nav nav-tabs" role="tablist">
 				    <li role="presentation" class="active"><a href="#home1" data-toggle="tab" role="tab" aria-controls="tab1">Văn bản mới</a></li>
 				    <li role="presentation"><a href="#paneTwo1" data-toggle="tab" role="tab" aria-controls="tab2">Văn bản có hiệu lực trong tháng</a></li>
-					  <li role="presentation"><a href="#paneTwo2" data-toggle="tab" role="tab" aria-controls="tab2">Giới thiệu văn bản mới</a></li>
+					<li role="presentation"><a href="#paneTwo2" data-toggle="tab" role="tab" aria-controls="tab2">Giới thiệu văn bản mới</a></li>
 			      </ul>
 				  <div id="tabContent1" class="tab-content">
 				    <div role="tabpanel" class="tab-pane fade in active box-tab" id="home1">
