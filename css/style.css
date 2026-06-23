@@ -1246,7 +1246,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
 .panel-heading1{
 	background: rgb(0 114 187) !important;
 	border-bottom: none !important;
-	border-left: solid 10px #ca1619 !important;
+	border-left: solid 10px rgb(0 114 187) !important;
 	border-top-right-radius:0;
 	border-top-left-radius:0;
 	
@@ -1630,7 +1630,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
 
 .panel-group1 .panel-heading{
     padding:0;
-    background:#d30000;
+    background:rgb(0 114 187);
 }
 
 .panel-group1 .panel-title a{
@@ -1644,7 +1644,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
 }
 
 .panel-group1 .panel-title a:hover{
-    background:#ff3030;
+    background:rgb(73, 173, 236);
 }
 
 .panel-group1 .panel-title a:after{
