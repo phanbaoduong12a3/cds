@@ -1,0 +1,54 @@
+/* Sắp xếp lại các khối tin của trang Tin hoạt động, không thay đổi style dùng chung. */
+@media (min-width: 992px) {
+  .news-page > .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .news-page .news-content {
+    float: none;
+    order: 1;
+  }
+
+  .news-page .news-sidebar {
+    float: none;
+    order: 2;
+  }
+
+  .news-page .news-notices {
+    float: none;
+    order: 3;
+  }
+
+  .news-page .news-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .news-page .news-content > div:first-child {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .news-page .news-content > div:not(:first-child) {
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 50%;
+  }
+
+  .news-page .news-content > div:not(:first-child) .col-md-6 {
+    width: 100%;
+  }
+
+  .news-page .news-content > div:not(:first-child) .tintiep {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .news-page .news-content > div {
+    margin-bottom: 20px;
+  }
+}
