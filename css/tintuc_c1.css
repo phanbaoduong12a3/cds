@@ -1,4 +1,4 @@
-/* Sắp xếp lại các khối tin của trang Tin hoạt động, không thay đổi style dùng chung. */
+
 @media (min-width: 992px) {
   .news-page > .row {
     display: flex;

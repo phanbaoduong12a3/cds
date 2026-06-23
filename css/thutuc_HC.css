@@ -1,5 +1,4 @@
-/* Chỉ thay đổi thứ tự các khối nội dung của trang Thủ tục hành chính.
-   Mọi màu sắc và kiểu hiển thị chi tiết vẫn dùng css/style.css. */
+
 @media (min-width: 992px) {
   .procedure-page > .row {
     display: flex;
