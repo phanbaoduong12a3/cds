@@ -1827,3 +1827,299 @@ a:hover{color: #e3393c;text-decoration: none;}
         width: 100%;
     }
 }
+.related-news{
+    margin-top:40px;
+}
+
+.related-title{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:25px;
+    color:#c62828;
+}
+
+.news-card{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    border:1px solid #eee;
+    transition:.3s;
+    margin-bottom:20px;
+}
+
+.news-card:hover{
+    text-decoration:none;
+    color:#333;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+    transform:translateY(-3px);
+}
+
+.news-thumb img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.news-body{
+    padding:15px;
+}
+
+.news-body h4{
+    font-size:15px;
+    line-height:1.6;
+    height:70px;
+    overflow:hidden;
+    margin-top:0;
+}
+
+.news-body span{
+    color:#999;
+    font-size:13px;
+}
+
+@media(max-width:768px){
+
+    .news-thumb img{
+        height:220px;
+    }
+
+    .news-body h4{
+        height:auto;
+    }
+
+}
+
+.legal-page{
+    padding-bottom:30px;
+}
+
+.page-header-box{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.page-header-box h2{
+    margin-top:0;
+    color:#b71c1c;
+    font-weight:700;
+}
+
+.card-box{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.section-title{
+    margin-top:0;
+    margin-bottom:20px;
+    color:#333;
+    font-weight:700;
+}
+
+.center-thumb{
+    width:100%;
+    border-radius:10px;
+}
+
+.center-title{
+    margin-top:0;
+    color:#b71c1c;
+}
+
+.info-item{
+    margin-bottom:15px;
+    font-size:15px;
+}
+
+.info-item i{
+    width:25px;
+    color:#b71c1c;
+}
+
+.procedure-card{
+    border:1px solid #eee;
+    border-radius:10px;
+    margin-bottom:15px;
+    overflow:hidden;
+}
+
+.procedure-header{
+    background:#fafafa;
+    padding:15px 20px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.procedure-list{
+    margin:0;
+    padding:15px 30px;
+}
+
+.procedure-list li{
+    margin-bottom:10px;
+}
+
+.procedure-list a{
+    color:#333;
+}
+
+.badge{
+    float:right;
+    background:#b71c1c;
+}
+
+@media(max-width:768px){
+
+    .page-header-box,
+    .card-box{
+        padding:20px;
+    }
+
+    .center-thumb{
+        margin-bottom:20px;
+    }
+
+}
+.document-portal{
+    background:#f5f7fb;
+}
+
+.stats-row{
+    margin-bottom:25px;
+}
+
+.stat-card{
+    background:#fff;
+    border-radius:16px;
+    padding:25px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.stat-card:hover{
+    transform:translateY(-5px);
+}
+
+.stat-card.active{
+    background:#b71c1c;
+    color:#fff;
+}
+
+.stat-card i{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.stat-card h2{
+    margin:10px 0;
+    font-weight:700;
+}
+
+.document-tabs{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+    flex-wrap:wrap;
+}
+
+.tab-btn{
+    border:none;
+    padding:12px 22px;
+    border-radius:10px;
+    background:#fff;
+    font-weight:600;
+}
+
+.tab-btn.active{
+    background:#b71c1c;
+    color:#fff;
+}
+
+.document-card{
+    background:#fff;
+    border-radius:16px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.document-top{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:15px;
+}
+
+.document-number{
+    font-weight:700;
+    color:#b71c1c;
+}
+
+.status{
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.pending{
+    background:#fff3cd;
+    color:#856404;
+}
+
+.document-info{
+    display:flex;
+    gap:30px;
+    margin-top:15px;
+    color:#666;
+}
+
+.document-footer{
+    border-top:1px solid #eee;
+    margin-top:20px;
+    padding-top:15px;
+}
+
+.document-footer a{
+    margin-right:20px;
+    color:#b71c1c;
+    font-weight:600;
+}
+
+.intro-card{
+    background:#fff;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.intro-body{
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    .document-top{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .document-info{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .tab-btn{
+        width:100%;
+    }
+
+}
