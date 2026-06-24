@@ -363,6 +363,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
     margin-top:0;
 }
 .navbar-default .navbar-nav>li>a {
+
 }
 .mega-dropdown {
     position: static !important;
@@ -1446,7 +1447,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
 .bo-rcham{
 	border-right: dotted 1px #ccc;
 }
-.text-danger{color: #ec2c24;}
+.text-danger{color: #1254b7;}
 .text-success{color: #26a62f;}
 .text-vb{color: #666666;margin-right: 30px;font-size: 15px;}
 .bo-bcham{border-bottom: dotted 1px #ccc;}
@@ -1683,7 +1684,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
     left: 0;
     width: 100%;
     height: 4px;
-    background: #e3393c;
+    background: #1254b7;
 }
 
 /* Tiêu đề */
@@ -1732,15 +1733,15 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
     width: 100%;
 }
 
-/* Hiệu ứng khi click vào ô nhập liệu */
+
 .modern-form .form-control:focus {
-    border-color: #e3393c;
+    border-color: #1254b7;
     background-color: #fff;
-    box-shadow: 0 0 0 3px rgba(227, 57, 60, 0.15);
+    box-shadow: 0 0 0 3px rgba(18, 84, 183, 0.15);
     outline: none;
 }
 
-/* Wrapper để xử lý Icon bên trong ô nhập */
+
 .input-wrapper {
     position: relative;
 }
@@ -1791,7 +1792,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
 }
 
 .btn-search-submit {
-    background: #e3393c;
+    background: #1254b7 ;
     color: #fff;
     border: none;
     padding: 12px 30px;
@@ -1800,12 +1801,12 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 12px rgba(227, 57, 60, 0.2);
+    box-shadow: 0 4px 12px rgba(18, 84, 183, 0.2);
 }
 
 .btn-search-submit:hover {
-    background: #cc2a2d;
-    box-shadow: 0 6px 16px rgba(227, 57, 60, 0.3);
+    background: #1254b7;
+    box-shadow: 0 6px 16px rgba(18, 84, 183, 0.3);
     transform: translateY(-1px);
 }
 
@@ -1838,7 +1839,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
     font-size:24px;
     font-weight:700;
     margin-bottom:25px;
-    color:#c62828;
+    color:#1254b7;
 }
 
 .news-card{
@@ -1909,7 +1910,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
 
 .page-header-box h2{
     margin-top:0;
-    color:#b71c1c;
+    color:#1254b7;
     font-weight:700;
 }
 
@@ -1935,7 +1936,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
 
 .center-title{
     margin-top:0;
-    color:#b71c1c;
+    color:#1c2cb7;
 }
 
 .info-item{
@@ -1945,7 +1946,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
 
 .info-item i{
     width:25px;
-    color:#b71c1c;
+    color:#1c2cb7;
 }
 
 .procedure-card{
@@ -1977,7 +1978,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
 
 .badge{
     float:right;
-    background:#b71c1c;
+    background:#1254b7;
 }
 
 @media(max-width:768px){
@@ -2015,7 +2016,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
 }
 
 .stat-card.active{
-    background:#b71c1c;
+    background:#1254b7;
     color:#fff;
 }
 
@@ -2045,7 +2046,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
 }
 
 .tab-btn.active{
-    background:#b71c1c;
+    background:#1254b7;
     color:#fff;
 }
 
@@ -2065,7 +2066,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
 
 .document-number{
     font-weight:700;
-    color:#b71c1c;
+    color:#1254b7;
 }
 
 .status{
@@ -2094,7 +2095,7 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
 
 .document-footer a{
     margin-right:20px;
-    color:#b71c1c;
+    color:#1254b7;
     font-weight:600;
 }
 
@@ -2133,4 +2134,29 @@ a:hover{color: rgb(0 114 187);text-decoration: none;}
     font-weight: 700;
     margin-bottom: 10px;
     text-align: center;
+.tab-content .tab-pane {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}}
+
+.tab-content .tab-pane.active {
+    display: block;
+    opacity: 1;
+}
+
+.tab-btn {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #dee2e6; 
+}
+
+.tab-btn:hover:not(.active) {
+    background: #f0f0f0;
+    color: #b71c1c;
+}
+.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb; 
 }
