@@ -1,0 +1,156 @@
+.w-80 {
+    width: 80%;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.main-img {
+    width: 50%;
+}
+
+.main-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.main-content2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 20px; 
+}
+
+.main-content2-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+.main-img2 {
+    width: 100%;
+}
+
+.main-text2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-logo2 {
+    color: #0b3d91;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.main-content3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px; 
+}
+
+.main-content3-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 20px;
+}
+
+.main-img3 {
+    width: 30%;
+}
+
+.main-text3 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.custom-pagination {
+    font-size: 14px;
+    border-top: 1px solid #eee; 
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-select {
+    width: auto !important;
+    display: inline-block;
+    padding: 2px 24px 2px 8px !important;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #555;
+}
+
+.page-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 34px;
+    height: 34px;
+    padding: 0 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #6c757d;
+    text-decoration: none;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+.page-btn:hover {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.page-btn.active {
+    background-color: #1976d2;
+    border-color: #1976d2;
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.page-btn.disabled {
+    color: #c0c0c0;
+    background-color: #fff;
+    border-color: #f0f0f0;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.page-dots {
+    padding: 0 5px;
+    color: #6c757d;
+}
