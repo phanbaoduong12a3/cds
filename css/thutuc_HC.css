@@ -1,0 +1,22 @@
+
+@media (min-width: 992px) {
+  .procedure-page > .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .procedure-page .procedure-content {
+    float: none;
+    order: 1;
+  }
+
+  .procedure-page .procedure-sidebar {
+    float: none;
+    order: 2;
+  }
+
+  .procedure-page .procedure-notices {
+    float: none;
+    order: 3;
+  }
+}

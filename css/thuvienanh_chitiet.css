@@ -1,0 +1,23 @@
+
+.gallery-detail-page #slider {
+  margin-bottom: 24px;
+}
+
+.gallery-detail-page #myCarousel {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.gallery-detail-page #myCarousel .item {
+  text-align: center;
+}
+
+.gallery-detail-page #myCarousel .item > img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .gallery-detail-page #slider { margin-bottom: 15px; }
+}

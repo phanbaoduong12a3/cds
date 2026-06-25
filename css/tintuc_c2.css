@@ -1,0 +1,30 @@
+
+@media (min-width: 992px) {
+  .news-list-page > .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .news-list-page .news-list-content {
+    float: none;
+    order: 1;
+  }
+
+  .news-list-page .news-list-sidebar {
+    float: none;
+    order: 2;
+  }
+
+  .news-list-page .news-list-notices {
+    float: none;
+    order: 3;
+  }
+
+  .news-list-page .media-list > li:not(:first-child) > .col-xs-5 {
+    width: 30%;
+  }
+
+  .news-list-page .media-list > li:not(:first-child) > .col-xs-7 {
+    width: 70%;
+  }
+}

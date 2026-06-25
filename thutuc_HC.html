@@ -8,6 +8,7 @@
     <!-- Bootstrap -->
 	<link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/thutuc_HC.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=latin,vietnamese" rel="stylesheet" type="text/css">
 	  
 	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="" crossorigin="anonymous">
@@ -140,14 +141,14 @@
 		</div>
 	</div>
 	 
-	  <main class="container mtb-20">
+	  <main class="container mtb-20 procedure-page">
 		  <ol class="breadcrumb">
 			<li><a href="/index_DN.html">Trang chủ</a></li>
 			  <li class="active">Văn bản</li>
 			<li class="active">Thủ tục hành chính</li>
 		 </ol>
 		  <section class="row">
-			  <div class="col-md-3 hidden-xs">
+		  <div class="col-md-3 hidden-xs procedure-sidebar">
 			    <div>
 				  <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
 					  <div class="panel panel-danger panel-danger1">
@@ -197,7 +198,7 @@
 					  
 				  </div>
                 </div>
-				<div class="">
+				<div class="procedure-notices col-md-9">
 					  <div class="">
 						  <h3 class="tle"><a href="">thông báo CHỈ ĐẠO ĐIỀU HÀNH</a></h3>
 						  <div class="box-tin pos">
@@ -231,7 +232,7 @@
 						  </ul>
 					  </div>
 			  </div><!--end left-->
-			  <div class="col-md-9">
+		  <div class="col-md-9 procedure-content">
 				<div role="tabpanel">
 				  <ul class="nav nav-tabs" role="tablist">
 				    <li role="presentation" class="active bg-tab"><a href="#home1" data-toggle="tab" role="tab" aria-controls="tab1">Thông tin</a></li>
@@ -571,8 +572,9 @@ Bản quyền thuộc Tòa án nhân dân tối cao
 
 	<script src="js/jquery-1.11.3.min.js"></script>
 	  <script src="js/jquery-1.js"></script>
-<script>
+	<script>
 		$(document).ready(function(){
+			$('.procedure-notices').insertAfter('.procedure-content');
 
 $(function(){
  
