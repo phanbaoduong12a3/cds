@@ -11,14 +11,14 @@ a{color: #292929;}
 a:hover{color: rgb(0 114 187);text-decoration: none;}
 #header{
 	width: 100%;
-	background-color: #f2f2f2;
-	background: -moz-linear-gradient(bottom, #fff 40%, #f2f2f2 60%);
-	background: -o-linear-gradient(bottom, #fff 40%, #f2f2f2 60%);
-	background: -ms-linear-gradient(bottom, #fff 40%, #f2f2f2 60%);
-	background: -webkit-gradient(linear,left bottom,left top,color-stop(0.4, #fff),color-stop(0.6, #f2f2f2));
+	background-color: #efefd1;
+	background: -moz-linear-gradient(bottom, #fff 40%, #efefd1 60%);
+	background: -o-linear-gradient(bottom, #fff 40%, #efefd1 60%);
+	background: -ms-linear-gradient(bottom, #fff 40%, #efefd1 60%);
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, #fff),color-stop(0.6, #efefd1));
 }
 .bg-header{
-	background: url(../images/bg-header.png) no-repeat right;
+	background: url(../images/bg-header_toaan.png) no-repeat right;   
 	width: 100%;
 	height: 130px;
 	position: relative;
